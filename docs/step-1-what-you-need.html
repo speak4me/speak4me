@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Speak4Me - 100$ for a speaking glass</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/interactive_graphic.css">
+
+</head>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">The idea of a low budget device to empower people with communication limitations was
+              developed by Tim Rittch, Marco Kurka, Alexander Krings, Julian Fenten and Malte Hain.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Step-by-Step Instruction</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white">Overview</a></li>
+              <li><a href="step-1-what-you-need.html" class="text-white"><strong>Step 1 - What you need</strong></a>
+              </li>
+              <li><a href="step-2-how-to-use-the-profile-customization.html" class="text-white">Step 2 - How to use the
+                  Profile Customization</a></li>
+              <li><a href="step-3-harware-setup.html" class="text-white">Step 3 - Hardware setup</a></li>
+              <li><a href="step-4-glass-setup.html" class="text-white">Step 4 - Glass setup </a></li>
+              <li><a href="step-5-load-the-software-on-your-arduino.html" class="text-white">Step 5 - Load the software
+                  on your Arduino</a></li>
+              <li><a href="step-6-advice-on-how-to-use-the-glass.html" class="text-white">Step 6 - Advices on how to use
+                  the glass</a></li>
+              <li><a href="profile-customization-tool.html" class="text-white">Profile Customization Tool</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark corporate-bg-color shadow-sm navbar-nav-center">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand mx-auto d-flex align-items-center">
+          <h4>Speak4Me</h4>
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h1>Step 1 - What you need</h1>
+        <br>
+        <p><strong>Remember:</strong> Just stay motivated and you will be easily able to build your own glasses! If the
+          links to a product should have changed, just search for it by their name. </p>
+
+        <div class="interactive-pcb-wrapper">
+          <img src="assets/hardware_components_v2.png">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4592 3448">
+            <desc>Speak4Me Interactive PCB</desc>
+            <defs>
+              <symbol id="tooltipp">
+                <rect x="0" y="0" width="1700" height="200" fill="#ffa500" stroke="black" stroke-width=".25" />
+              </symbol>
+            </defs>
+            <g fill="#a0d0a0" class="board" id="board">
+              <a id="ARDUINO" class="ARDUINO">
+                <polygon id="arduino-shape" class="part"
+                points="1957,263 1846,264 1835,280 1839,1164 1848,1171 2225,1172 2231,261 2110,264 2108,409 1958,409 1957,263" />
+              </a>
+              <g class="info ARDUINO" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">A1: Arduino (#5)</text>
+              </g>
+              <a id="EMIC" class="EMIC">
+                <polygon id="emic-shape" class="part"
+                  points="2889,1056 2901,274 2240,265 2234,1053 2889,1056" />
+              </a>
+              <g class="info EMIC" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">IC1: EMIC (#2)</text>
+              </g>
+              <a id="AUX_port" class="AUX_port">
+                <polygon id="AUX_port-shape" class="part"
+                  points="2219,1294 2475,1297 2475,1549 2393,1569 2392,1601 2282,1600 2284,1565 2221,1530 2219,1294" />
+              </a>
+              <g class="info AUX_port" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">J2: AUX port (#13)</text>
+              </g>
+              <a id="USB_port" class="USB_port">
+                <polygon id="USB_port-shape" class="part"
+                  points="1861,1232 2145,1228 2147,1590 1867,1594 1861,1232" />
+              </a>
+              <g class="info USB_port" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">J1: USB port (#12)</text>
+              </g>
+              <a id="Connection_internal_speaker" class="Connection_internal_speaker">
+                <polygon id="Connection_internal_speaker-shape" class="part"
+                  points="2379,1189 2382,1246 2269,1249 2266,1186 2379,1189" />
+              </a>
+              <g class="info Connection_internal_speaker" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">J3: Internal speaker port (</text>
+              </g>
+
+              <a id="LED" class="LED">
+                <polygon id="LED-shape" class="part"
+                  points="2522,1596 2540,1420 2646,1418 2623,1600 2522,1596" />
+              </a>
+              <g class="info LED" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">D1: LED (#14)</text>
+              </g>
+
+              <a id="Keep-alive-circuit" class="Keep-alive-circuit">
+                <polygon id="Keep-alive-circuit-shape" class="part"
+                  points="2821,1210 2830,1113 2852,1106 2879,1115 2894,1135 2904,1171 2894,1197 2869,1216 2846,1222 2821,1210" />
+              </a>
+              <g class="info Keep-alive-circuit" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">Q1: NPN Transistor for Keep-alive-circuit (#10)</text>
+              </g>
+
+              <a id="Resistance-1" class="Resistance-1">
+                <polygon id="Resistance-1-shape" class="part"
+                  points="2541,1316 2543,1329 2602,1336 2618,1360 2776,1362 2791,1331 2856,1331 2849,1318 2789,1312 2774,1287 2618,1285 2604,1312 2541,1316" />
+              </a>
+              <g class="info Resistance-1" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">R1: Resistor to raise power consumption (#8)</text>
+              </g>
+
+              <a id="Resistance-2" class="Resistance-2">
+                <polygon id="emic-shape" class="part"
+                  points="2584,1165 2602,1165 2616,1142 2721,1144 2738,1168 2742,1168 2742,1173 2738,1175 2730,1195 2607,1192 2599,1175 2584,1165" />
+              </a>
+              <g class="info Resistance-2" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">R2: series resistor for Q1 (#9)</text>
+              </g>
+
+              <a id="Resistance-3" class="Resistance-3">
+                <polygon id="Resistance-3-shape" class="part"
+                  points="2682,1491 2716,1510 2835,1501 2859,1482 2835,1459 2711,1459 2680,1481 2682,1491" />
+              </a>
+              <g class="info Resistance-3" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">R3: series resistor for LED (#9)</text>
+              </g>
+
+              <a id="Power-bank" class="Power-bank">
+                <polygon id="Power-bank-shape" class="part"
+                  points="4560,2871 4537,2879 3204,2864 3166,2858 3160,2842 3198,628 3257,604 4526,621 4562,635 4560,2871" />
+              </a>
+              <g class="info Power-bank" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">Powerbank</text>
+              </g>
+
+              <a id="Internal-speaker" class="Internal-speaker">
+                <circle id="Internal-speaker-shape" class="part" cx="2377" cy="2313" r="362" />
+              </a>
+              <g class="info Internal-speaker" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">Internal speaker (#11)</text>
+              </g>
+
+              <a id="USB-cable" class="USB-cable">
+                <polygon id="USB-cable-shape" class="part"
+                  points="857,1239 942,1155 1135,1090 1295,1084 1440,1119 1449,1050 1272,1003 1132,1000 1123,1004 1120,1013 1061,1027 1025,1041 1012,1055 940,1051 822,1060 664,1105 589,1162 522,1241 474,1333 448,1450 480,1443 487,1354 533,1264 584,1194 644,1143 707,1113 801,1086 911,1071 979,1070 1024,1073 953,1100 904,1124 817,1140 718,1157 662,1174 720,1177 812,1159 865,1149 819,1185 793,1220 801,1234 812,1231 844,1189 913,1146 953,1126 917,1150 870,1196 834,1236 857,1239" />
+              </a>
+              <g class="info USB-cable" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">Connection cable of the glasses (#7)</text>
+              </g>
+
+              <a id="Reflectance-Sensors" class="Reflectance-Sensors">
+                <polygon id="Reflectance-Sensors-shape" class="part"
+                  points="637,1428 657,1577 451,1607 427,1450 637,1428" />
+              </a>
+              <a id="Reflectance-Sensors" class="Reflectance-Sensors">
+                <polygon id="Reflectance-Sensors-shape" class="part"
+                  points="863,1420 851,1246 691,1226 705,1413 863,1420" />
+              </a>
+              <a id="Reflectance-Sensors" class="Reflectance-Sensors">
+                <polygon id="Reflectance-Sensors-shape" class="part"
+                  points="915,1568 925,1424 1116,1463 1102,1614 915,1568" />
+              </a>
+              <a id="Reflectance-Sensors" class="Reflectance-Sensors">
+                <polygon id="Reflectance-Sensors-shape" class="part"
+                  points="722,1758 717,1560 877,1560 886,1762 722,1758" />
+              </a>
+              <g class="info Reflectance-Sensors" transform="translate(0,0)">
+                <use xlink:href="#tooltipp" />
+                <text x="20" y="140">QTR-1RC Reflectance Sensors (#1)</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <h2>Material list</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Comment</th>
+              <th scope="col">Link</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>QTR-1RC Reflectance Sensor (2-Pack)</td>
+              <td>3</td>
+              <td>The sensors to measure the position of the eye. You need only 4, but in case of breaking one, 6 is the safer quantity.</td>
+              <td><a href="https://www.amazon.de/POLOLU-2459-QTR-1RC-Reflectance-Sensor-2-Pack/dp/B06XT2JG5J?currency=USD&language=en_GB" target="_blank">Amazon</a></td>
+              <td>$21</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Parallax Emic 2 Text-to-Speech Module</td>
+              <td>1</td>
+              <td>External text-to-speech module</td>
+              <td><a href="https://www.adafruit.com/product/924" target="_blank">Adafruit</a></td>
+              <td>$59,95</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>3.5mm angle/straight jack cable (AUX, 1.5 m)</td>
+              <td>1</td>
+              <td>AUX cable, which is needed when using an external speaker</td>
+              <td><a href="https://aliexpress.com/item/32655506530.html" target="_blank">AliExpress</a></td>
+              <td>$3,45</td>
+            </tr>
+			
+            <tr>
+              <th scope="row">4</th>
+              <td>Insulated braided copper wire (3m)</td>
+              <td>1</td>
+              <td>Connections to board and glasses</td>
+              <td><a href="https://aliexpress.com/item/1005001887482060.html" target="_blank">AliExpress</a></td>
+              <td>$1,80</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Arduino-compatible nano board (ATmega328, mini-USB)</td>
+              <td>1</td>
+              <td>More compact Arduino compatible with the Uno</td>
+              <td><a href="https://aliexpress.com/item/1005001540279617.html" target="_blank">AliExpress</a></td>
+              <td>$2,66</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>USB 2.0 cable (EASY male A > male mini-B, 0,5m)</td>
+              <td>1</td>
+              <td>To connect Arduino Nano to Pc</td>
+              <td><a href="https://aliexpress.com/item/32870987678.html" target="_blank">AliExpress</a></td>
+              <td>$1,48</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>USB 3.0 cable (male A > female A, 1,8m)</td>
+              <td>1</td>
+              <td>Converts to the connection cable of the glasses</td>
+              <td><a href="https://aliexpress.com/item/32415077335.html" target="_blank">AliExpress</a></td>
+              <td>$1,46</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Metal film resistor (20 Ohm, axial, 2W, 5%)</td>
+              <td>3</td>
+              <td>Resistor for keep-alive circuit of power supply. Select "2W 20R"</td>
+              <td><a href="https://aliexpress.com/item/1005001971944293.html" target="_blank">AliExpress</a></td>
+              <td>$1,20</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Metal film resistor (220 Ohm)</td>
+              <td>1 (100pcs)</td>
+              <td>Resistors for LED & keep-alive circuit of power supply</td>
+              <td><a href="https://aliexpress.com/item/1851910131.html" target="_blank">AliExpress</a></td>
+              <td>$0,57</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>NPN TO-92 transistor (40V, 0.6A, 0.625W)</td>
+              <td>1 (20 pcs)</td>
+              <td>Transistor for keep-alive circuit of power supply</td>
+              <td><a href="https://aliexpress.com/item/32875004775.html" target="_blank">AliExpress</a></td>
+              <td>$0,65</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>8 Ohms 2 watt speaker, 36mm</td>
+              <td>1</td>
+              <td>Internal speaker</td>
+              <td><a href="https://aliexpress.com/item/32895072194.html" target="_blank">AliExpress</a></td>
+              <td>$2.98</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Usb 3.0 Type A Connector "G46"</td>
+              <td>1 (5 pcs)</td>
+              <td></td>
+              <td><a href="https://aliexpress.com/item/32736969300.html" target="_blank">AliExpress</a></td>
+              <td>$1.11</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>3,5mm Audio Jack Socket</td>
+              <td>1 (10 pcs)</td>
+              <td></td>
+              <td><a href="https://aliexpress.com/item/33027900521.html" target="_blank">AliExpress</a></td>
+              <td>$1.97</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>Status LED</td>
+              <td>1 (100 pcs)</td>
+              <td></td>
+              <td><a href="https://aliexpress.com/item/1005001976801604.html" target="_blank">AliExpress</a></td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><strong>$100,90</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Tools and consumption items</h2>
+        <ul>
+          <li>Pliers </li>
+          <li>Rubber band </li>
+          <li>Wire stripper</li>
+          <li>Voltmeter</li>
+          <li>Insulating tape</li>
+          <li>Nail file</li>
+          <li>Sandpaper</li>
+          <li>Soldering iron</li>
+          <li>Solder wire</li>
+          <li>Knife</li>
+          <li>Double-faced adhesive tape</li>
+          <li>A helping hand or something to fix it</li>
+          <li>Ruler</li>
+        </ul>
+
+        <h2>Video: Circuit board order</h2>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/514635638?dnt=1&title=0&byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <br>
+        <p><strong>Mentioned Links:</strong></p>
+        <ul>
+          <li><a href="assets/Gerber.zip" download>Download Gerber file (.zip)</a></li>
+          <li><a href="http://jlcpcb.com/" target="_blank">JLCPCB - PCB Fabrication Manufacturer</a></li>
+        </ul>
+
+        <h2>Video: 3D printed materials</h2>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/514636201?dnt=1&title=0&byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <br>
+        <p><strong>Mentioned Links:</strong></p>
+        <ul>
+          <li><a href="assets/3d-printing-stl-files.zip" download>Download STL files (.zip)</a></li>
+          <li><a href="https://craftcloud3d.com/" target="_blank">Craftcloud® - 3D Printing Service Marketplace</a></li>
+        </ul>
+
+        <h2>Notes</h2>
+        <ul>
+          <li>If you are already very experienced in Arduino projects, it is also possible to download the wiring
+            diagram and use a normal circuit board </li>
+          <li>The case is not mandatory, but we highly recommend it</li>
+        </ul>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link corporate-link" href="step-2-how-to-use-the-profile-customization.html">
+                <span aria-hidden="true">Step 2 &raquo;</span>
+                <span class="sr-only">Next to Step 2</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a class="corporate-link" href="#">Back to top</a>
+      </p>
+      <p>Developed in the context of a lecture at the University of Cologne</p>
+      <div class="d-flex flex-row">
+        <p>
+          Made with <span class="heart">❤</span> in SEDI |
+          <a class="corporate-link" href="legal-notice.html">Legal Notice</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <!--Vimeo Player js-->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <!-- Custom JavaScript: Video jump-->
+  <script src="js/video-jump.js"></script>
+
+</html>

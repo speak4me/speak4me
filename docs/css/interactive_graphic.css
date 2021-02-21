@@ -1,0 +1,73 @@
+.interactive-pcb-wrapper {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    /* <= shrinks container to image size */
+    transition: transform 150ms ease-in-out;
+}
+
+.interactive-pcb-wrapper img {
+    /* <= optional, for responsiveness */
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.interactive-pcb-wrapper svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.part {
+    fill: rgba(255, 219, 153, 0.2);
+    stroke: #ffa500;
+    stroke-width: 10;
+}
+
+.part:hover {
+    fill: rgba(255, 219, 153, 0.5);
+    stroke: #ffa500;
+}
+
+.info {
+    opacity: 0;
+    font-size: 82px;
+    fill: white;
+    pointer-events: none;
+    
+}
+
+#ARDUINO:hover~.ARDUINO,
+#ARDUINO:focus~.ARDUINO,
+#EMIC:hover~.EMIC,
+#EMIC:focus~.EMIC,
+#AUX_port:hover~.AUX_port,
+#AUX_port:focus~.AUX_port,
+#USB_port:hover~.USB_port,
+#USB_port:focus~.USB_port, 
+#Connection_internal_speaker:hover~.Connection_internal_speaker,
+#Connection_internal_speaker:active~.Connection_internal_speaker,
+#LED:hover~.LED,
+#LED:focus~.LED,
+#Keep-alive-circuit:hover~.Keep-alive-circuit,
+#Keep-alive-circuit:focus~.Keep-alive-circuit,
+#Resistance-1:hover~.Resistance-1,
+#Resistance-1:focus~.Resistance-1,
+#Resistance-2:hover~.Resistance-2,
+#Resistance-2:focus~.Resistance-2,
+#Resistance-3:hover~.Resistance-3,
+#Resistance-3:focus~.Resistance-3,
+#Power-bank:hover~.Power-bank,
+#Power-bank:focus~.Power-bank,
+#Internal-speaker:hover~.Internal-speaker,
+#Internal-speaker:focus~.Internal-speaker,
+#USB-cable:hover~.USB-cable,
+#USB-cable:focus~.USB-cable,
+#Reflectance-Sensors:hover~.Reflectance-Sensors,
+#Reflectance-Sensors:focus~.Reflectance-Sensors{
+    opacity: 1;
+    transition: all 0.5s linear;
+}

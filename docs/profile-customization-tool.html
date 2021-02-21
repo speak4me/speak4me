@@ -1,0 +1,1419 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Speak4Me - 100$ for a speaking glass</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jsPDF -->
+  <script src="js/jspdf.min.js"></script>
+  <script src="js/autoTable.js"></script>
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">The idea of a low budget device to empower people with communication limitations was
+              developed by Tim Rittch, Marco Kurka, Alexander Krings, Julian Fenten and Malte Hain.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Step-by-Step Instruciton</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white">Overview</a></li>
+              <li><a href="step-1-what-you-need.html" class="text-white">Step 1 - What you need</a></li>
+              <li><a href="step-2-how-to-use-the-profile-customization.html" class="text-white">Step 2 - How to use the
+                  Profile Customization</a></li>
+              <li><a href="step-3-harware-setup.html" class="text-white">Step 3 - Hardware setup</a></li>
+              <li><a href="step-4-glass-setup.html" class="text-white">Step 4 - Glass setup </a></li>
+              <li><a href="step-5-load-the-software-on-your-arduino.html" class="text-white">Step 5 - Load the software
+                  on your Arduino</a></li>
+              <li><a href="step-6-advice-on-how-to-use-the-glass.html" class="text-white">Step 6 - Advices on how to use
+                  the glass</a></li>
+              <li><a href="profile-customization-tool.html" class="text-white"><strong>Profile Customization
+                    Tool</strong></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark corporate-bg-color shadow-sm navbar-nav-center">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand mx-auto d-flex align-items-center">
+          <h4>Speak4Me</h4>
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h1>Profile Customization Tool</h1>
+        <p>
+          Create up to 8 profiles according to your needs. Then auto-generate the finished code and download it so that
+          you only have to copy it to the Arduino. You don't know what the tool is for or how to use it? Check out our
+          step by step guide: <a class="corporate-link" href="step-2-how-to-use-the-profile-customization.html">Step 2 -
+            How to Use the Customization Tool</a>
+        </p>
+
+        <h2>Customize your profiles</h2>
+        <p>
+          If you have already created your customizaiton with the help of our Customization Tool, you can easily import
+          it and modify your profiles. If not you can directly start editing your expressions and use the import
+          functionality the next time.
+        </p>
+        <div class="form-group">
+          <label for="file-selector">Import <code>speak4me.ino</code> file</label><br>
+          <input type="file" id="file-selector" accept=".ino" class="btn btn-primary my-2">
+        </div>
+
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active dark-link" data-toggle="tab" id="tab-profile-main" href="#profile-main">Main
+              Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-1" href="#profile-1">Profile 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-2" href="#profile-2">Profile 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-3" href="#profile-3">Profile 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-4" href="#profile-4">Profile 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-5" href="#profile-5">Profile 5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-6" href="#profile-6">Profile 6</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-7" href="#profile-7">Profile 7</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dark-link" data-toggle="tab" id="tab-profile-8" href="#profile-8">Profile 8</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <!--Profile Main-->
+          <div id="profile-main" class="container tab-pane active">
+            <div class="grid-container">
+              <div class="center">
+
+              </div>
+              <div class="left">
+
+              </div>
+              <div class="up">
+
+              </div>
+              <div class="right">
+
+              </div>
+              <div class="down">
+
+              </div>
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <span class="corporate-text-highlight">Settings</span>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                  <span>Leave Menu</span>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                  <span>Volume Up</span>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                  <span>Toggle Mute</span>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                  <span>Volume Down</span>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <span class="corporate-text-highlight">Basics</span>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                  <span>No</span>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                  <span>Okay</span>
+                </div>
+              </div>
+              <div class="up-right center-box">
+                <span>Yes</span>
+              </div>
+              <div class="up-down center-box">
+                <div>
+                  <span>Help</span>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <span class="corporate-text-highlight">Profiles</span>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                    <button onclick="$('#tab-profile-4').trigger('click')" type="button" class="btn btn-link">Profile
+                      4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                    <button onclick="$('#tab-profile-1').trigger('click')" type="button" class="btn btn-link">Profile
+                      1</button>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                    <button onclick="$('#tab-profile-2').trigger('click')" type="button" class="btn btn-link">Profile
+                      2</button>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                  <button onclick="$('#tab-profile-3').trigger('click')" type="button" class="btn btn-link">Profile
+                    3</button>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <span class="corporate-text-highlight">Profiles</span>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                  <button onclick="$('#tab-profile-8').trigger('click')" type="button" class="btn btn-link">Profile
+                    8</button>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <button onclick="$('#tab-profile-5').trigger('click')" type="button" class="btn btn-link">Profile
+                    5</button>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                  <button onclick="$('#tab-profile-6').trigger('click')" type="button" class="btn btn-link">Profile
+                    6</button>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                  <button onclick="$('#tab-profile-7').trigger('click')" type="button" class="btn btn-link">Profile
+                    7</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 1-->
+          <div id="profile-1" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="1"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="1"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="1"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="1"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 2-->
+          <div id="profile-2" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="2"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="2"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="2"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="2"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 3-->
+          <div id="profile-3" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="3"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="3"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="3"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="3"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 4-->
+          <div id="profile-4" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="4"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="4"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="4"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="4"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 5-->
+          <div id="profile-5" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="5"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="5"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="5"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="5"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 6-->
+          <div id="profile-6" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="6"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="6"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="6"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="6"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 7-->
+          <div id="profile-7" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="7"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="7"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="7"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="7"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile 8-->
+          <div id="profile-8" class="container tab-pane fade">
+            <div class="grid-container">
+              <div class="center">
+              </div>
+
+              <div class="left">
+              </div>
+
+              <div class="up">
+              </div>
+
+              <div class="right">
+              </div>
+
+              <div class="down">
+              </div>
+
+              <div class="center-center center-box">
+                <div>
+                  <span id="eye">&#128065;</span>
+                </div>
+              </div>
+              <div class="left-center center-box">
+                <div>
+                  <button type="button" class="btn btn-link open-expression-modal" data-profile="8"
+                    data-direction="Left">Left</button>
+                </div>
+              </div>
+              <div class="left-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="left-down center-box">
+                <div>
+                </div>
+              </div>
+
+              <div class="up-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="8"
+                  data-direction="Up">Up</button>
+              </div>
+              <div class="up-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="up-right center-box">
+              </div>
+              <div class="up-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                  <p></p>
+                </div>
+              </div>
+              <div class="right-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="8"
+                  data-direction="Right">Right</button>
+              </div>
+              <div class="right-left center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-up center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-right center-box">
+                <div class="down-up">
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-down center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-center center-box">
+                <button type="button" class="btn btn-link open-expression-modal" data-profile="8"
+                  data-direction="Down">Down</button>
+              </div>
+              <div class="down-left center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-up center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-right center-box">
+                <div>
+                </div>
+              </div>
+              <div class="down-down center-box">
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <br>
+          <h2>General Settings</h2>
+          <div class="form-row">
+            <div class="col">
+              <label><strong>Voice style:</strong> <span tabindex="-1" data-toggle="popover" data-trigger="focus"
+                  title="Voice style" data-content="Male of female voice for the output of your device"
+                  class="badge badge-pill badge-primary">?</span></label>
+              <select class="form-control" id="voiceStyle">
+                <option value="1">male</option>
+                <option value="2">female</option>
+              </select>
+
+              <br>
+
+              <label><strong>Initial volume level:</strong> <span tabindex="-1" data-toggle="popover"
+                  data-trigger="focus" title="Initial volume level"
+                  data-content="The default value of the volume of your device. 1 = low volume, 5 = high volume."
+                  class="badge badge-pill badge-primary">?</span>
+              </label>
+              <div class="row">
+                <div class="col-1 text-center">
+                  <output class="align-middle" id="initialVolumeOutput">4</output>
+                </div>
+                <div class="col-11">
+                  <input type="range" id="initialVolume" class="form-control" value="4" min="1" max="5"
+                    oninput="document.getElementById('initialVolumeOutput').innerText = this.value">
+                </div>
+              </div>
+
+              <br>
+
+              <label><strong>Menu trigger duration:</strong> <span tabindex="-1" data-toggle="popover"
+                  data-trigger="focus" title="Menu trigger duration"
+                  data-content="The duration (in milliseconds) you have to close your eyes until the menu opens up."
+                  class="badge badge-pill badge-primary">?</span></label>
+              <br>
+              <input type="number" id="closedDuration" class="form-control" value="2000" min="1000" max="10000">
+
+              <br>
+
+              <h2>Expert Settings</h2>
+
+              <label><strong>Keep-alive function:</strong> <span tabindex="-1" data-toggle="popover"
+                  data-trigger="focus" title="Keep-alive function"
+                  data-content="Enable or disable the keep alive function which prevents the powerbank from stopping charging the device (necessary with some powerbanks)."
+                  class="badge badge-pill badge-primary">?</span></label>
+              <select class="form-control" id="keepAliveOpt">
+                <option value="true">active</option>
+                <option value="false">inactive</option>
+              </select>
+
+              <br>
+
+              <label><strong>Status LED:</strong> <span tabindex="-1" data-toggle="popover" data-trigger="focus"
+                  title="Status LED"
+                  data-content="Enable or disable the status LED which blinks when a eye movement to a direction is detected. An important feature if you want to learn how to use the device."
+                  class="badge badge-pill badge-primary">?</span></label>
+              <select class="form-control" id="statusLEDActive">
+                <option value="true">active</option>
+                <option value="false">inactive</option>
+              </select>
+
+              <br>
+
+              <label><strong>Direction detection time:</strong> <span tabindex="-1" data-toggle="popover"
+                  data-trigger="focus" title="Direction detection time"
+                  data-content="The length of time (in milliseconds) the user must look in one direction before the device recognises it as a direction."
+                  class="badge badge-pill badge-primary">?</span></label>
+              <br>
+              <input type="number" id="dirDuration" class="form-control" value="500" min="100" max="2000">
+
+              <br>
+
+              <label><strong>Direction detection waiting time:</strong> <span tabindex="-1" data-toggle="popover"
+                  data-trigger="focus" title="Direction detection waiting time"
+                  data-content="The length of time the unit pauses after a direction is detected. Useful to avoid duplicate detections."
+                  class="badge badge-pill badge-primary">?</span></label>
+              <br>
+              <input type="number" id="dirPause" class="form-control" value="500" min="0" max="2000">
+
+              <br>
+
+              <label><strong>Direction detection timeout duration:</strong> <span tabindex="-1" data-toggle="popover"
+                  data-trigger="focus" title="Direction detection timeout duration"
+                  data-content="The duration after which the detected direction is discarded if no further direction can be detected."
+                  class="badge badge-pill badge-primary">?</span></label>
+              <br>
+              <input type="number" id="timeOutDuration" class="form-control" value="4000" min="2000" max="10000">
+
+              <br>
+
+              <label><strong>Autocalibration:</strong> <span tabindex="-1" data-toggle="popover" data-trigger="focus"
+                  title="Autocalibration" data-content="When active, speak4me is starting a short autocalibration every startup. The autocalibration is recommended and only takes 8 seconds.
+                  When inactive, speak4me uses predefined thresholds to calibrate the sensors."
+                  class="badge badge-pill badge-primary">?</span></label>
+              <br>
+              <select class="form-control" id="calibration">
+                <option value="true">active</option>
+                <option value="false">inactive</option>
+              </select>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+
+
+          <br>
+
+          <h2>Download your custom profiles</h2>
+
+          <p>
+            Use the button below to download your custom profiles as a final code. You have only transfer it to your
+            Arduino. In case you need help in this step, please check the video in <a class="corporate-link"
+              href="step-2-how-to-use-the-profile-customization.html">step 5 - Load the software
+              on your Arduino</a>.<br><br>
+            For a better learning process we provide you a printable PDF version of your profiles.
+          </p>
+
+          <button id="btnDownloadCode" class="btn btn-primary my-2">Download your profiles as code</button><br>
+          <button id="btnPdfDownload" class="btn btn-primary my-2">Download profiles as PDF</button>
+          <br />
+
+
+        </div>
+      </div>
+
+  </main>
+
+
+  <!-- Modal Start -->
+  <div class="modal fade" id="expressionsModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 id="modal-expression-title" class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="grid-container">
+            <div class="center-center">
+              <div>
+                <span id="eye">&#128065;</span>
+              </div>
+            </div>
+            <div class="left no-border">
+              <div class="form-group">
+                <label for="profile-1-left">Left Expression:</label>
+                <textarea id="expression-input-left" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="up no-border">
+              <div class="form-group">
+                <label for="profile-1-up">Up Expression:</label>
+                <textarea id="expression-input-up" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="right no-border">
+              <div class="form-group">
+                <label for="profile-1-right">Right Expression:</label>
+                <textarea id="expression-input-right" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="down no-border">
+              <div class="form-group">
+                <label for="down">Down Expression:</label>
+                <textarea id="expression-input-down" class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="expression-modal-save" data-profile="" data-direction="" type="button"
+            class="btn btn-primary my-2">Save</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal end-->
+
+
+
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a class="corporate-link" href="#">Back to top</a>
+      </p>
+      <p>Developed in the context of a lecture at the University of Cologne</p>
+      <div class="d-flex flex-row">
+        <p>
+          Made with <span class="heart">❤</span> in SEDI |
+          <a class="corporate-link" href="legal-notice.html">Legal Notice</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div class="loading style-2" id="loading">
+    <div id="loader-frame">
+      <div id="loader"></div>
+      <p style="    margin-top: 130px;    color: white;    margin-right: 15px;">Uploading your custom profiles</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript: Customization Tool-->
+  <script src="js/customization-tool.js"></script>
+</body>
+
+</html>

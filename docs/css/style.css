@@ -1,0 +1,258 @@
+.corporate-bg-color {
+  background-color: #ffa500;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: #ffa500;
+} 
+/* Change color of links*/
+.corporate-link {
+  color: #ffa500 !important;
+}
+.dark-link{
+  color: #222 !important;
+}
+
+.btn-primary{color:#fff;background-color: #ffa500;border-color:#ffa500}
+.badge-primary{color:#fff;background-color: #ffa500;border-color:#ffa500}
+
+.btn-primary:hover{color:#fff;background-color:#ffbb00fb;border-color:#ffa600d8}
+.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 .2rem rgba(44,43,42,0.5)}
+.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#ffa500;border-color:#ffa600d8}
+.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#ffa600d8;border-color:#000}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(44,43,42,0.5)}
+
+.btn-outline-primary{color:#ffa500;background-color:transparent;background-image:none;border-color:teal}.btn-outline-primary:hover{color:#222;background-color:#ffa600d8;border-color:#ffa500}
+.btn-outline-primary:focus,.btn-outline-primary.focus{box-shadow:0 0 0 .2rem rgba(0,128,128,0.5)}
+.btn-outline-primary.disabled,.btn-outline-primary:disabled{color:#ffa500;background-color:transparent}
+.btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{color:#fff;background-color:#ffa600d8;border-color:teal}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,.btn-outline-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(43,44,42,0.5)}
+
+.heart{
+  color:#ffa500;
+  font-size: 2em;
+  }
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+/* Customization tool */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color:#ffa500 !important;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+.center { 
+  grid-area: 4 / 4 / 7 / 7; 
+  border: #ffa500 solid 2px;
+  margin: 2px;
+}
+.left { 
+  grid-area: 4 / 1 / 7 / 4;
+  border: #ffa500 solid 2px;
+  margin: 2px;
+}
+.up { 
+  grid-area: 1 / 4 / 4 / 7; 
+  border: #ffa500 solid 2px;
+  margin: 2px;
+}
+.right { 
+  grid-area: 4 / 7 / 7 / 10; 
+  border: #ffa500 solid 2px;
+  margin: 2px;
+}
+.down { 
+  grid-area: 7 / 4 / 10 / 7; 
+  border: #ffa500 solid 2px;
+  margin: 2px;
+}
+.center-center { 
+  grid-area: 5 / 5 / 6 / 6; 
+}
+.left-center { 
+  grid-area: 5 / 2 / 6 / 3; 
+}
+.left-left { 
+  grid-area: 5 / 1 / 6 / 2; }
+.left-up { grid-area: 4 / 2 / 5 / 3; }
+.left-down { grid-area: 6 / 2 / 7 / 3; }
+.left-right { grid-area: 5 / 3 / 6 / 4; }
+.up-center { grid-area: 2 / 5 / 3 / 6; }
+.up-up { grid-area: 1 / 5 / 2 / 6; }
+.up-left { grid-area: 2 / 4 / 3 / 5; }
+.up-down { grid-area: 3 / 5 / 4 / 6; }
+.up-right { grid-area: 2 / 6 / 3 / 7; }
+.right-center { grid-area: 5 / 8 / 6 / 9; }
+.right-left { grid-area: 5 / 7 / 6 / 8; }
+.right-up { grid-area: 4 / 8 / 5 / 9; }
+.right-right { grid-area: 5 / 9 / 6 / 10; }
+.right-down { grid-area: 6 / 8 / 7 / 9; }
+.down-center { grid-area: 8 / 5 / 9 / 6; }
+.down-up { grid-area: 7 / 5 / 8 / 6; }
+.down-left { grid-area: 8 / 4 / 9 / 5; }
+.down-down { grid-area: 9 / 5 / 10 / 6; }
+.down-right { grid-area: 8 / 6 / 9 / 7; }
+
+.center-box {
+  display : inline-flex;
+  align-items : center;
+  justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffa500;
+  font-weight: 600;
+  /*margin-bottom: 30px;*/
+}
+
+h1{
+  color:#ffa500;
+}
+.corporate-text-highlight {
+  color: #ffa500;
+  font-weight: bold;
+}
+#eye{
+  font-size: 2em;
+}
+
+.no-border{
+  border: none;
+}
+
+  /* Center the loader */
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #ffa500;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display:none;
+  
+  }
+  #loader-frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+  
+    margin: -75px 0 0 -75px;
+    
+    
+
+    display:none;
+  
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+
+  .loading {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,.5);
+      z-index: 5;
+      display: none;
+  }
+  .style-2 {
+      border-style: double;
+      border-color: #ccc transparent;
+  }

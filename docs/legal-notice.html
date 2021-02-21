@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Speak4Me - 100$ for a speaking glass</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jsPDF -->
+  <script src="js/jspdf.min.js"></script>
+  <script src="js/autoTable.js"></script>
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">The idea of a low budget device to empower people with communication limitations was
+              developed by Tim Rittch, Marco Kurka, Alexander Krings, Julian Fenten and Malte Hain.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Step-by-Step Instruciton</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white">Overview</a></li>
+              <li><a href="step-1-what-you-need.html" class="text-white">Step 1 - What you need</a></li>
+              <li><a href="step-2-how-to-use-the-profile-customization.html" class="text-white">Step 2 - How to use the
+                  Profile Customization</a></li>
+              <li><a href="step-3-harware-setup.html" class="text-white">Step 3 - Hardware setup</a></li>
+              <li><a href="step-4-glass-setup.html" class="text-white">Step 4 - Glass setup </a></li>
+              <li><a href="step-5-load-the-software-on-your-arduino.html" class="text-white">Step 5 - Load the software
+                  on your Arduino</a></li>
+              <li><a href="step-6-advice-on-how-to-use-the-glass.html" class="text-white">Step 6 - Advices on how to use
+                  the glass</a></li>
+              <li><a href="profile-customization-tool.html" class="text-white">Profile Customization Tool</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark corporate-bg-color shadow-sm navbar-nav-center">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand mx-auto d-flex align-items-center">
+          <h4>Speak4Me</h4>
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <h1>Disclaimer for Speak4Me</h1>
+
+        <p>If you require any more information or have any questions about our site's disclaimer, please feel free to
+          contact us by <a id="mail" href="mailto:mhain2@MAIL.uni-koeln.de">email</a>. Our Disclaimer was generated with
+          the help of the <a href="https://www.disclaimergenerator.net/">Disclaimer Generator</a>.</p>
+
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+            style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is
+        licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+          Attribution 4.0 International License</a>
+
+        <h2>Contact</h2>
+        <p>
+          Tim Rittich<br>
+          Weidengasse 25<br>
+          50668 Köln<br>
+        </p>
+
+        <h2>Disclaimers for Speak4Me</h2>
+
+        <p>All the information on this website - speak4me.github.io - is published in good faith and for general
+          information purpose only. Speak4Me does not make any warranties about the completeness, reliability and
+          accuracy of this information. Any action you take upon the information you find on this website (Speak4Me), is
+          strictly at your own risk. Speak4Me will not be liable for any losses and/or damages in connection with the
+          use of our website.</p>
+
+        <p>From our website, you can visit other websites by following hyperlinks to such external sites. While we
+          strive to provide only quality links to useful and ethical websites, we have no control over the content and
+          nature of these sites. These links to other websites do not imply a recommendation for all the content found
+          on these sites. Site owners and content may change without notice and may occur before we have the opportunity
+          to remove a link which may have gone 'bad'.</p>
+
+        <p>Please be also aware that when you leave our website, other sites may have different privacy policies and
+          terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as
+          their "Terms of Service" before engaging in any business or uploading any information. Our Privacy Policy was
+          created by <a href="https://www.generateprivacypolicy.com/">the Privacy Policy Generator</a>.</p>
+
+        <h2>Consent</h2>
+
+        <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+
+        <h2>Update</h2>
+
+        <p>Should we update, amend or make any changes to this document, those changes will be prominently posted here.
+        </p>
+
+        <h1>Speak4Me uses the following third-party libraries</h1>
+        <ul>
+          <li><a href="https://github.com/contrem/arduino-timer">arduino-timer by contrem</a></li>
+          <li><a href="https://getbootstrap.com/">Boostrap</a></li>
+          <li><a href="https://jquery.com/">jQuery 3.5.1</a></li>
+          <li><a href="https://github.com/MrRio/jsPDF">jsPDF</a></li>
+          <li><a href="https://github.com/simonbengtsson/jsPDF-AutoTable">jsPDF-AutoTable</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a class="corporate-link" href="#">Back to top</a>
+      </p>
+      <p>Developed in the context of a lecture at the University of Cologne</p>
+      <div class="d-flex flex-row">
+        <p>
+          Made with <span class="heart">❤</span> in SEDI |
+          <a class="corporate-link" href="legal-notice.html">Legal Notice</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    //hide mail address
+    $('#mail').on('click', function () {
+      var href = $(this).attr('href');
+      $(this).attr('href', href.replace('MAIL', 'smail'));
+    });
+  </script>
+
+</html>
