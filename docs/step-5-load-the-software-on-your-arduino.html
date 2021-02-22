@@ -71,12 +71,39 @@
           should stay the same. We recommend the following available YouTube video.
         </p>
         <p>
-          Video on YouTube: <a href="https://www.youtube.com/watch?v=5OtMqr5hGjE&amp;ab_channel=techydiy" target="_blank">Installing Arduino Uno software on Windows and running your first sketch</a>
+          Video on YouTube: <a href="https://www.youtube.com/watch?v=5OtMqr5hGjE&amp;ab_channel=techydiy"
+            target="_blank">Installing Arduino Uno software on Windows and running your first sketch</a>
         </p>
         <a href="https://www.youtube.com/watch?v=5OtMqr5hGjE&amp;ab_channel=techydiy" target="_blank">
           <img src="assets/step5-yt-thumbnail.png">
         </a>
         <br>
+        <br>
+        <h2>Installing Additional Arduino Libraries</h2>
+        <p>
+          For the implementation of the logic we used four additional libaries. You need to install them to use the code
+          properly. If you want to know how to install additional libraries: <a
+            href="https://www.arduino.cc/en/guide/libraries" target="_blank">Guide: Installing Additional Arduino
+            Libraries</a>
+        </p>
+        <ul>
+          <li>QTRSensors</li>
+          <ul>
+            <li>To enable an easy communication between the Arduino and the infrared sensors</li>
+          </ul>
+          <li>SoftwareSerial</li>
+          <ul>
+            <li>To communicate with the EMIC</li>
+          </ul>
+          <li>Arduino-Timer</li>
+          <ul>
+            <li>To loop through our process and coordinate the logic of the different queries</li>
+          </ul>
+          <li>Avr/pgmspace</li>
+          <ul>
+            <li>To store the variables which contain the phrases in the program memory</li>
+          </ul>
+        </ul>
         <br>
         <br>
         <hr>
@@ -102,12 +129,6 @@
     </div>
 
   </main>
-
-
-
-
-
-
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
@@ -122,15 +143,15 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <!--Vimeo Player js-->
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <!-- Custom JavaScript: Video jump-->
-  <script src="js/video-jump.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<!--Vimeo Player js-->
+<script src="https://player.vimeo.com/api/player.js"></script>
+<!-- Custom JavaScript: Video jump-->
+<script src="js/video-jump.js"></script>
 
 </html>
