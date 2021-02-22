@@ -82,6 +82,11 @@ footer p {
   margin-bottom: .25rem;
 }
 
+/* Cards of index page */
+.index-card {
+  min-height: 50px;
+}
+
 /* Customization tool */
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
