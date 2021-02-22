@@ -132,7 +132,7 @@ $(document).ready(function () {
             //Get Arduino Code Template
             var oRequest = new XMLHttpRequest();
             oRequest.addEventListener("load", codeRequestLoad);
-            oRequest.open("GET", "/Speak4me/assets/speak4me.ino", true);
+            oRequest.open("GET", "/speak4me/assets/speak4me.ino", true);
             oRequest.send();
 
         }
